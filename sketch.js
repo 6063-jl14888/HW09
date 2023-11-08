@@ -66,7 +66,7 @@ function draw() {
   if (ball.overlaps(coin)) {
     coin = new Coin(random(width), random(height), 30);
     coin.color = 'red';
-    ball.increaseDiameter(2);
+    ball.increaseDiameter(5);
     coinCounter++; 
   }
 
