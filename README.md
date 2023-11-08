@@ -6,55 +6,16 @@ Markdown Cheatsheet (from [https://www.markdownguide.org/cheat-sheet/](https://w
 
 ---
 ---
+After browsing through the library, I developed an interest in interactions that involve mouse or keyboard-controlled movement. p5.play is commonly used to create simple games. Subsequently, I delved into the details on the p5.play webpage, discovering basic tutorials that demonstrated the utility and basic code included in this library. As I was learning, the idea for this week's assignment gradually took shape in my mind.
 
-# Heading1
-## Heading2
-### Heading3
-#### Heading4
-##### Heading5
-###### Heading6
+I noticed the "overlap" effect, and it seemed like it could be a fun interaction, reminiscent of the game "Snake." However, designing a snake shape proved to be quite challenging, so I simplified the controllable object to a basic shape: a circle. After that, I needed to make it follow the mouse's movements.
 
-**bold text**
+Once I had initially written the program, I encountered my first challenge: how to make the "coin" object, which is overlapped by the player, appear randomly on the screen. I used the random function to change the coin's coordinates.
 
-*italicized text*
+Then I faced another problem: how to make the player's diameter increase after completing an overlap to convey the effect of "eating" a coin. So, I used an if statement to provide the condition for increasing the player's diameter.
 
-~~strikethrough text~~
+Unlike the "moveTowards" function provided on the p5.play website, once the canvas was set to the window size, the player's follow speed with the mouse felt a bit slow. After revisiting previous tutorials and assignments, I adjusted the player's movement speed. However, this adjustment also caused the player to jitter rapidly when the mouse was not moving.
 
-Ordered List:
-1. First item
-2. Second item
-3. Third item
+While solving these issues, I made numerous attempts to make all these numbers and variables work together. I found that when random, movement, or interactivity was involved, the code tended to become lengthy and could easily become confusing.
 
-Unordered List:
-- First item
-- Second item
-- Third item
-
-`short code block`
-
-```
-extended code block
-fun() {
-  return 0
-}
-```
-
-Link:  
-[linked text](https://www.example.com)
-
-
-Image with url:  
-![image description](https://dm-gy-6063-2023f-d.github.io/assets/homework/02/clark-espaco-modulado-00.jpg)
-
-
-Image on repo:  
-![image description](./file-name.jpg)
-
-
-To start a new line, add two spaces at the end of a line, like this:  
-this is a new line.
-
-
-To start a new paragraph, leave an empty line between two lines of text.
-
-This is a new paragraph.
+I have a few other ideas as well, such as creating a path with boundaries on both sides and allowing a circle or character to move along this path by following the mouse. During this process, the circle must not touch the "walls" on either side, or else it needs to restart. Additionally, I have an idea about how to automatically switch to the next randomly generated path after completing the current one.
